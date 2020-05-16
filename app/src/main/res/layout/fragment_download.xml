@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/adView">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_auto_video_download" />
+
+            <LinearLayout
+                android:id="@+id/llSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:layout_marginBottom="16.0dip"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dp">
+
+                            <LinearLayout
+                                android:id="@+id/purl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorAccent"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/ivLink"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="3.0dip"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:padding="12.0dip"
+                                    android:src="@drawable/ic_new_link_24"
+                                    android:tint="@android:color/white" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/vurl"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/purl">
+
+                                <EditText
+                                    android:id="@+id/etURL"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_toLeftOf="@+id/ivHelp"
+                                    android:layout_toRightOf="@+id/ivLink"
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/montserrat_regular"
+                                    android:gravity="center"
+                                    android:hint="Shared or Copied video link..."
+                                    android:inputType="textUri"
+                                    android:singleLine="true"
+                                    android:textColor="@color/colorDefaultDark"
+                                    android:textSize="16dp" />
+
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ProgressBar
+                            android:id="@+id/pbFetchingVideo"
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:visibility="gone" />
+
+                        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.0dip"
+                            android:layout_marginRight="16.0dip"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="50dp"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/btnDownload"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:fontFamily="@font/montserrat_semibold"
+                                    android:text="Download"
+                                    android:textAllCaps="false"
+                                    android:textColor="@android:color/white"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/tips_layout" />
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cvDownload"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                card_view:cardCornerRadius="4.0dip">
+
+                <LinearLayout
+                    android:id="@+id/llDownload"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16.0dip">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgAvatar"
+                            android:layout_width="50.0dip"
+                            android:layout_height="50.0dip"
+                            android:src="@drawable/background_tiles"
+                            card_view:civ_border_color="#ffd2d2d2"
+                            card_view:civ_border_width="1.0dip" />
+
+                        <TextView
+                            android:id="@+id/tvAuthor"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_toRightOf="@+id/imgAvatar"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:paddingLeft="10.0dip"
+                            android:paddingTop="4.0dip"
+                            android:text="Author"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:id="@+id/imgClose"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_close" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvAuthor"
+                            android:layout_toRightOf="@+id/imgAvatar"
+                            android:paddingLeft="8.0dip">
+
+                            <ImageView
+                                android:id="@+id/ivMusicNote"
+                                android:layout_width="16.0dip"
+                                android:layout_height="16.0dip"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_music_note_24dp" />
+
+                            <TextView
+                                android:id="@+id/tvMusic"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5.0dip"
+                                android:layout_toRightOf="@+id/ivMusicNote"
+                                android:text="Music - Author"
+                                android:textSize="12.0sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tvDesc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15.0dip"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Description Goes Here" />
+
+                    <LinearLayout
+                        android:id="@+id/llDownloadPercentage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:progressBarStyleHorizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip"
+                            android:max="100"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvDownloadPercentage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20.0dip"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="center"
+                            android:text="Starting download..."
+                            android:textColor="@color/colorAccent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llDownloadCompleted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10.0dip"
+                        android:visibility="visible">
+
+                        <Button
+                            android:id="@+id/btnWatch"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="130.0dip"
+                            android:layout_height="50.0dip"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="WATCH" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/adsBannerId_live"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

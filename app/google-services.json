@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "560898489190",
+    "firebase_url": "https://video-downloader-faecc.firebaseio.com",
+    "project_id": "video-downloader-faecc",
+    "storage_bucket": "video-downloader-faecc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560898489190:android:807c2b8a9a5c40a5bba6a7",
+        "android_client_info": {
+          "package_name": "video.downloader.free.now.videos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560898489190-n8dgoosbkp4tt3u4di56ckrbdegdct45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYSyZKwuIO12m3KFKHjAae0tUfVX5VMLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560898489190-n8dgoosbkp4tt3u4di56ckrbdegdct45.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

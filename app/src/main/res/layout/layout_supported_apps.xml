@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="20.0dip"
+            android:paddingBottom="20.0dip"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:gravity="center"
+                android:text="Currently Supported for following applications  "
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20.0dip">
+
+                <LinearLayout
+                    android:id="@+id/llInstagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48.0dip"
+                        android:layout_height="48.0dip"
+                        android:src="@mipmap/ic_instagram" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Instagram"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="40.0dip"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/llFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48.0dip"
+                        android:layout_height="48.0dip"
+                        android:src="@mipmap/ic_facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="Facebook"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="40.0dip"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/llTikTok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="48.0dip"
+                        android:layout_height="48.0dip"
+                        android:src="@mipmap/ic_tiktok" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="TikTok"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="20.0dip"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/llYouTube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="48.0dip"
+                        android:layout_height="48.0dip"
+                        android:src="@mipmap/ic_youtube" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="YouTube"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginTop="15.0dip"
+                android:background="#ffd6d6d6"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/str_developed_with_love"
+                android:textSize="11.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

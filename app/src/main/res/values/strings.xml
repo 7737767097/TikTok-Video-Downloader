@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Tiktok Video Downloader</string>
+
+    <string name="str_developed_with_love">Developed in <b>India</b></string>
+
+
+    <string name="adsAppId_live">ca-app-pub-7089549078600285~3338190880</string>
+    <string name="adsBannerId_live">ca-app-pub-7089549078600285/8207374189</string>
+    <string name="adsInsertialId_live">ca-app-pub-7089549078600285/4268129177</string>
+
+    <string name="adsAppId_test">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="adsBannerId_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="adsInrstitalId_test">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="channel_name">Channel</string>
+    <string name="channel_description">Channel Description</string>
+    <string name="info_permission_denied">Sorry permission denied. We can not open this app on your device, please allow permission and try again later.</string>
+    <string name="format_request_permision">This will need to have read/write permission of your sdcard in order to save Files. Do you want to grant it?</string>
+
+
+    <string name="SharingVideoSubject">Sharing Downloaded Video</string>
+    <string name="SharingVideoTitle">Sharing Video</string>
+    <string name="SharingVideoBody">Sharing Video</string>
+
+    <string name="RateAppTitle">Rate App now</string>
+    <string name="RateApp">Give rating at Play Store, if you like this app.</string>
+
+    <string name="font_regular">montserrat_regular.ttf</string>
+    <string name="font_bold">montserrat_semibold.ttf</string>
+    <string name="font_medium">montserrat_semibold.ttf</string>
+
+    <string name="active_internet_connection">Please make sure that your device is connected to active internet connection.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Downloaded</string>
+    <string name="nav_notifications">Share App</string>
+    <string name="nav_settings">Rate App</string>
+    <string name="nav_about_us">Supported Apps</string>
+    <string name="nav_help">Help / Tips</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Photos</item>
+        <item>Movies</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="tips_note">Note :-  </string>
+    <string name="tips_follow_the_below_instruction_in_order_to_download_videos"> Follow the below instruction in order to download videos :</string>
+    <string name="tips_just_copy_the_link_of_any_video_from_tiktok_facebook_instagram_etc">• Just copy the link of any video fromFacebook, Instagram, TikTok, etc.</string>
+    <string name="tips_make_sure_auto_download_is_running_for_fast_process">• Make sure \'Auto Downloading\' is running for Fast process</string>
+    <string name="downloading_from_instagram">• If you are downloading video from Instagram app, Make sure video icon should appears at that post in Instagram App.</string>
+</resources>
